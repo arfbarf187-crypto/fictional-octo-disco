@@ -1,4 +1,11 @@
-:root {
+const toggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.site-nav');
+
+if (toggle && nav) {
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+}:root {
   --bg: #09070f;
   --bg-soft: #120d1d;
   --panel: rgba(21, 15, 34, 0.86);
